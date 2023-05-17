@@ -67,8 +67,6 @@
 #'              searchinator term version by Morgan Thurston Spring 2023 
 #'                  
 #'       basic code
-#'       requires a google sheet with a column called url
-#'       containing . . . . urls of reddit threads
 #'       
 #'       search term version requires a google sheet with
 #'       search terms, see below
