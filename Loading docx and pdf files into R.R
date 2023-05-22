@@ -34,6 +34,7 @@ sentiment <- tidy_data %>%
 #These are just a few examples of the content analysis tasks you can perform in R. Depending on your specific research questions and goals, you can explore more advanced techniques and packages.
 #Note: Make sure to install and load the necessary packages (readtext, tidytext, textdata, etc.) before running the code. Also, ensure that the file path is correctly specified when reading the DOCX file.
 
+##_____________________________ End of Section_____________________________________________________
 
 ## LOADING a Text File (.pdf) into R 
 
