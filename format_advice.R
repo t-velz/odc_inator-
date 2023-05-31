@@ -1,11 +1,20 @@
-# Description  ------------------------------------------------------------
+# Description  -------------------------------------------------------- ----
 #this file will explain how to make your files more readable through 
 #formatting your code correctly.
 #the process of creating functions will also be explained, which makes 
 #the code you write more efficient 
 
 
-# * Formatting Guide --------------------------------------------------------
+# * Formatting Guide -------------------------------------------------- ----
+
+# use outlines ----
+
+# Section ----
+
+## Subsection ----
+
+### Sub-subsection ----
+
 
 # file names should always be meaningful and end in .R
 # avoid use of spaces! or special characters
