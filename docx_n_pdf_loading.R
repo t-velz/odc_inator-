@@ -1,7 +1,15 @@
-## Composed and uploaded by Quang APL
-## Let's say you have some docx or pdf text files stored on your hard drive, which you want to load into R for content analysis. Here are the instructions:
+# Composed and uploaded by Quang APL  ####
+# Let's say you have some docx or pdf text files stored on your hard drive, 
+# which you want to load into R for content analysis. 
 
-## LOADING a text file (.docx) into R:
+# Note from Ted:   "Hey Quang, check out our Github file on formatting code 
+# to make it more readable.   I have started to implement two of the ideas. 
+# First, limit the width of each row for ease of reading-- about this wide.
+# Second, use the outline capacity built into RStudio. See instructions.
+
+# Here are the instructions:
+
+## LOADING a text file (.docx) into R:   ####
 
 # 1.Install and load the necessary packages:
 install.packages("readtext")
@@ -13,7 +21,7 @@ library(tidytext)
 text_data <- readtext("path/to/your/file.docx")
 # Replace "path/to/your/file.docx" with the actual file path and name.
 
-# 3.Convert the text data into a tidy format:
+## 3.Convert the text data into a tidy format:     ####
 tidy_data <- text_data %>%
 unnest_tokens(output = "word", input = text)
 #This step uses the unnest_tokens() function from the tidytext package to tokenize the text into individual words, creating a tidy data frame with columns for document ID (doc_id) and words (word).
