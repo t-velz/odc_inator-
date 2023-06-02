@@ -7,13 +7,13 @@
 
 # * Formatting Guide -------------------------------------------------- ----
 
-# use outlines ----
+# Format a single "# Words here" start of line,   ####  four repeat at end 
 
-# Section ----
+# Top level: this is how you make top section level ####
 
-## Subsection ----
+## Subsection 1:  This is how you make the subsection section level ----
 
-### Sub-subsection ----
+### Subsubsection 2:  This is houw you make the ----
 
 
 # file names should always be meaningful and end in .R
