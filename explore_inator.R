@@ -8,7 +8,7 @@
 #'         
 #'         and 
 #'         Sam Smith,    
-#'         date     to
+#'         6/2/2023     to
 #'         ??
 #'               
 #'           _.-^~~^^^`~-,_,,~''''''```~,''``~'``~,
@@ -198,9 +198,409 @@ table(tk$at_staged)
 
 # *********************************************
 
-#    continue . . . .
+tk %>%
+  mutate(ft_accurate =
+           
+         fake_unbiased  +
+         fake_true +
+         fake_real.life  +
+         fake_real  +
+         fake_how.it.is  +
+         fake_facts  +
+         fake_fact.  +
+         fake_accurate
+                   )  -> tk 
 
+tk %>%
+  mutate(at_accurate =
+           
+           auth_unbiased  +
+           auth_true +
+           auth_real.life  +
+           auth_real  +
+           auth_how.it.is  +
+           auth_facts  +
+           auth_fact.  +
+           auth_accurate
+                   )  -> tk 
 
+table(tk$ft_accurate)
+
+table(tk$at_accurate)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_credible =
+           
+           fake_verified  +
+           fake_valid  +
+           fake_official  +
+           fake_legitimate   +
+           fake_credible
+                   )  -> tk 
+
+tk %>%
+  mutate(at_credible =
+           
+           auth_verified  +
+           auth_valid  +
+           auth_official  +
+           auth_legitimate   +
+           auth_credible
+                    )  -> tk 
+
+table(tk$ft_credible)
+table(tk$at_credible)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_educate =
+           
+           fake_telling  +
+           fake_informs  +
+           fake_informative  +
+           fake_information  +
+           fake_inform.  +
+           fake_explains  +
+           fake_explain  +
+           fake_.tells  +
+           fake_.tell.
+                    )  -> tk 
+
+tk %>%
+  mutate(at_educate =
+           
+           auth_telling  +
+           auth_informs  +
+           auth_informative  +
+           auth_information  +
+           auth_inform.  +
+           auth_explains  +
+           auth_explain  +
+           auth_.tells  +
+           auth_.tell.
+                    )  -> tk 
+
+table(tk$ft_educate)
+table(tk$at_educate)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_health =
+           
+           fake_health.  +
+           fake_diagnosis
+                     )  -> tk 
+
+tk %>%
+  mutate(at_health =
+           
+           auth_health.  +
+           auth_diagnosis
+                     )  -> tk 
+
+table(tk$ft_health)
+table(tk$at_health)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_humor =
+          
+           fake_hilarious  +
+           fake_funny
+                     )  -> tk 
+
+tk %>%
+  mutate(at_humor =
+           
+           auth_hilarious  +
+           auth_funny
+                     )  -> tk 
+
+table(tk$ft_humor)
+table(tk$at_humor)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_inherent =
+           
+           fake_really  +
+           fake_reality  +
+           fake_realistic  +
+           fake_natural  +
+           fake_in.fact  +
+           fake_genuinely  +
+           fake_genuine  +
+           fake_believable  +
+           fake_being.real  +
+           fake_authenticity  +
+           fake_authentic  +
+           fake_actually
+                     )  -> tk 
+
+tk %>%
+  mutate(at_inherent =
+           
+           auth_really  +
+           auth_reality  +
+           auth_realistic  +
+           auth_natural  +
+           auth_in.fact  +
+           auth_genuinely  +
+           auth_genuine  +
+           auth_believable  +
+           auth_being.real  +
+           auth_authenticity  +
+           auth_authentic  +
+           auth_actually
+                      )  -> tk 
+
+table(tk$ft_inherent)
+table(tk$at_inherent)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_lived.experience =
+           
+           fake_experiences  +
+           fake_experience.  +
+           fake_feelings  +
+           fake_emotion  +
+           fake_experienced  +
+           fake_struggles  +  
+           fake_struggle
+                       )  -> tk 
+
+tk %>%
+  mutate(at_lived.experience =
+           
+           auth_experiences  +
+           auth_experience.  +
+           auth_feelings  +
+           auth_emotion  +
+           auth_experienced  +
+           auth_struggles  +  
+           auth_struggle
+                        )  -> tk 
+
+table(tk$ft_lived.experience)
+table(tk$at_lived.experience)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_original =
+           
+           fake_interesting  +
+           fake_cool
+                     )  -> tk 
+
+tk %>%
+  mutate(at_original =
+           
+           auth_interesting  +
+           auth_cool
+                     )  -> tk 
+
+table(tk$ft_original)
+table(tk$at_original)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_personal =
+           
+           fake_yourself  +
+           fake_real.person  +
+           fake_personal.  +
+           fake_myself  +
+           fake_being.yourself  +
+           fake_being.themselves  +
+           fake_being.himself  +
+           fake_being.herself
+                     )  -> tk 
+
+tk %>%
+  mutate(at_personal =
+           
+           auth_yourself  +
+           auth_real.person  +
+           auth_personal.  +
+           auth_myself  +
+           auth_being.yourself  +
+           auth_being.themselves  +
+           auth_being.himself  +
+           auth_being.herself
+                     )  -> tk 
+
+table(tk$ft_personal)
+table(tk$at_personal)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_pure =
+           
+           fake_sweet  +
+           fake_straight  +
+           fake_simply  +
+           fake_nature  +
+           fake_love  +
+           fake_just.being  +
+           fake_its.just  +
+           fake_innocent  +
+           fake_i.love.it  +
+           fake_happy  +
+           fake_fun.  +
+           fake_cute  +
+           fake_baby  +
+           fake_animals  +
+           fake_animal.
+                 )  -> tk 
+
+tk %>%
+  mutate(at_pure =
+           
+           auth_sweet  +
+           auth_straight  +
+           auth_simply  +
+           auth_nature  +
+           auth_love  +
+           auth_just.being  +
+           auth_its.just  +
+           auth_innocent  +
+           auth_i.love.it  +
+           auth_happy  +
+           auth_fun.  +
+           auth_cute  +
+           auth_baby  +
+           auth_animals  +
+           auth_animal.
+                 )  -> tk 
+
+table(tk$ft_pure)
+table(tk$at_pure)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_raw =
+           
+           fake_unfiltered  +
+           fake_unedited  +
+           fake_no.filter  +
+           fake_live  +
+           fake_.raw.
+               )  -> tk 
+
+tk %>%
+  mutate(at_raw =
+           
+           auth_unfiltered  +
+           auth_unedited  +
+           auth_no.filter  +
+           auth_live  +
+           auth_.raw.
+               )  -> tk 
+
+table(tk$ft_raw)
+table(tk$at_raw)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_reflect =
+           
+           fake_speak  +
+           fake_shows  +
+           fake_showing  +
+           fake_it.shows
+                  )  -> tk 
+
+tk %>%
+  mutate(at_reflect =
+           
+           auth_speak  +
+           auth_shows  +
+           auth_showing  +
+           auth_it.shows
+                  )  -> tk 
+
+table(tk$ft_reflect)
+table(tk$at_reflect)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_relatable =
+           
+           fake_resonate  +
+           fake_relatable  +
+           fake_relate  +
+           fake_personally  +
+           fake_identify  +
+           fake_i.do.this
+                   )  -> tk 
+
+tk %>%
+  mutate(at_relatable =
+           
+           auth_resonate  +
+           auth_relatable  +
+           auth_relate  +
+           auth_personally  +
+           auth_identify  +
+           auth_i.do.this
+                   )  -> tk 
+
+table(tk$ft_relatable)
+table(tk$at_relatable)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_transparent =
+           
+           fake_transparent  +
+           fake_open  +
+           fake_honest
+                )  -> tk 
+
+tk %>%
+  mutate(at_transparent =
+           
+           auth_transparent  +
+           auth_open  +
+           auth_honest
+                )  -> tk 
+
+table(tk$ft_transparent)
+table(tk$at_transparent)
+
+# *********************************************
+
+tk %>%
+  mutate(ft_utility =
+           
+           fake_motivate  +
+           fake_advice
+                )  -> tk 
+
+tk %>%
+  mutate(at_utility =
+           
+           auth_motivate  +
+           auth_advice
+                )  -> tk 
+
+table(tk$ft_utility)
+table(tk$at_utility)
 
 
 
