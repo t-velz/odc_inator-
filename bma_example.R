@@ -185,7 +185,7 @@ imageplot.bma(glm.out.sm)
 #  default orde is by input, probne0 and mds are options
 #  see p25 https://cran.r-project.org/web/packages/BMA/BMA.pdf
 
-# some comparisons
+## Plot comparisons   ####
 
 par(mfrow = c(2, 2))
 
