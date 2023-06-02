@@ -48,6 +48,16 @@ you need to make sure that you have the right branch name.
 Now, the branch you created will appear in the drop down menu, and you should be able to switch 
 between the main branch and any other branches you create.
 
+# ****      Question about how we might want to use branches--
+      Sam and I are working on a paper from his thesis, and the relevant main branch
+      is called explore_inator becaues it demonstrates sections of code that we use
+      when exploring a dataset that has the main variables collected and wrangled and 
+      now, the rest of the work with be making variables from those, and then exploring
+      what is going on in that dataset. 
+      In this instance, we can imagine that some parts of our particular exploring will
+      be helpful to others, and could be copied into the main explore_inator
+      or that we could make a branch?
+
 #To commit changes to a branch, you need to click on the pencil icon and make edits.
 Once the necessary edits have been made, click on "commit changes"
 
