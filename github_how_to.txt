@@ -1,0 +1,75 @@
+Description --------------------------------------------------------------------------------------------------
+GitHub "how-to" file! GitHub is a useful platform that makes it easy to manage projects and collaborate with 
+others. This file will explain basic functions of GitHub, and how to use some of its features.
+
+* Getting Started --------------------------------------------------------------------------------------
+#If you do not have an existing repository, go to GitHub's website, sign up, and create a repository. 
+Both private and public repositories can be made. A public repository does not mean that anyone can
+make changes to the code in the repository. It does mean, however, that anyone can fork the repository.
+Forking a repository is the process of making a copy of the repository to their own GitHub account.
+
+* "How-to" --------------------------------------------------------------------------------------
+#If you click on a file, and you can see the recent changes that have been made in red and green, 
+click the 3 dots in the top right corner of the file and select "view file" to view
+the file normally.
+
+#To commit changes to a file, open the file and select the pencil icon. Once you have
+clicked on the pencil icon, you will be able to make changes and commit them to the file.
+
+#To easily use code found in a repository locally, open the desired file, click
+on the button with two squares near the pencil icon to copy the raw code.
+It can then be pasted into your workspace.
+
+#You can download a raw file from a repository if you open the desired file, and click on the download 
+button next to the pencil icon.
+
+#If you want to add a single file to a repository, click on the "Add file" drop down menu on the main page
+of the repository. You can either create a new file, or upload an existing file. 
+
+#A repository is a project which contains both files and folders, and all repositories
+will track versions of files and folders. ("odc_inator-" is a repository)
+    To create a new repository:
+    1. Click on your account icon in top right with the drop down menu
+    2. Select "Your repositories" 
+    3. Click on the green "New" button
+    4. Fill in necessary information
+    5. Click "create repository" at bottom of the page
+    
+#Your repository will have a "main" branch by default, and creating additional branches
+allows you to work on specific features without affecting other parts of the project.
+A branch can be thought of as a version of your code. The “master” branch will hold the default 
+version of your code. You could create a branch called “develop” that would contain a version of 
+the code with features that are still in development. When you start interacting a Github repository, 
+you need to make sure that you have the right branch name. 
+    To create a new branch:
+    1. Click on the main branch drop down
+    2. Enter a name for your branch
+    3. Click "Create branch: "your-branch-name"
+Now, the branch you created will appear in the drop down menu, and you should be able to switch 
+between the main branch and any other branches you create.
+
+#To commit changes to a branch, you need to click on the pencil icon and make edits.
+Once the necessary edits have been made, click on "commit changes"
+
+#Pull requests: 
+To ask collaborators for feedback on changes you have made, create a pull request.
+Pull requests are such valuable tools that some repositories even require an approving
+review before you can merge pull requests.
+If you haven't finished working on something, but still want feedback, you can
+mark your pull request as a draft.
+You can link a pull request to an issue to show that a fix to a problems is in progress,
+and the issue can be automatically closed once someone merges the pull request.
+    To create a pull request:
+    1. On GitHub, go to the main page of your repository 
+    2. In the "branch" drop down menu, choose the branch that has your commits
+    3. Above the list of files, there is a button called "Compare & pull request"
+    to create a pull request for that branch 
+    4. Use the base branch dropdown menu to select which branch the changes should be
+    merged into. Use the compare branch drop down menu to choose the topic branch that the
+    changes were made in
+    5. Create a title and description for your pull request
+    6. To create a pull request that is ready to be reviewed, click "Create Pull Request".
+    To create a draft pull request, use the drop down menu and select "Create Draft Pull Request",
+    then click "Draft Pull Request"
+Forking a repository, as talked about earlier, allows people to suggest changes to a repository they are
+not contributors of through pull requests. The owner of the project can then accept or deny these changes.
