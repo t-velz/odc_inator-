@@ -28,9 +28,9 @@ content_inator.R
 
 # if files should be run in order prefix with 0 padded numbers, with gaps
 
-05_rurl_get_inator.R
-10_comment_inator.R
-15_sentiment_inator.R
+# 05_rurl_get_inator.R
+# 10_comment_inator.R
+# 15_sentiment_inator.R
 
 
 # variable and function names should be lowercase and _ should be used when 
