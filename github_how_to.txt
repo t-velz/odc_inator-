@@ -1,3 +1,4 @@
+
 Description --------------------------------------------------------------------------------------------------
 GitHub "how-to" file! GitHub is a useful platform that makes it easy to manage projects and collaborate with 
 others. This file will explain basic functions of GitHub, and how to use some of its features.
@@ -20,6 +21,9 @@ clicked on the pencil icon, you will be able to make changes and commit them to 
 on the button with two squares near the pencil icon to copy the raw code.
 It can then be pasted into your workspace.
 
+#If you upload a file to GitHub and make changes to it later, you can reupload the same file,
+and the newest version will be added to the repository. 
+
 #You can download a raw file from a repository if you open the desired file, and click on the download 
 button next to the pencil icon.
 
@@ -37,26 +41,21 @@ will track versions of files and folders. ("odc_inator-" is a repository)
     
 #Your repository will have a "main" branch by default, and creating additional branches
 allows you to work on specific features without affecting other parts of the project.
-A branch can be thought of as a version of your code. The “master” branch will hold the default 
+A branch can be thought of as a version of your code. The most basic explanation of a branch is that it
+is a copy of a GitHub project that can easily be changed and then combined with the original project. If you 
+make a change directly to the main branch, you are also making a change to the working product.
+    -The problem with this is that if you are pushing new changes to code directly to the main
+    branch, you could potentially push code with bugs or other issues to your main repository.
+Creating a separate branch that you do all of your work in is beneficial for this reason.The “master” branch will hold the default 
 version of your code. You could create a branch called “develop” that would contain a version of 
 the code with features that are still in development. When you start interacting a Github repository, 
 you need to make sure that you have the right branch name. 
     To create a new branch:
-    1. Click on the main branch drop down
+    1. Click on the main branch drop down menu
     2. Enter a name for your branch
     3. Click "Create branch: "your-branch-name"
 Now, the branch you created will appear in the drop down menu, and you should be able to switch 
 between the main branch and any other branches you create.
-
-# ****      Question about how we might want to use branches--
-      Sam and I are working on a paper from his thesis, and the relevant main branch
-      is called explore_inator becaues it demonstrates sections of code that we use
-      when exploring a dataset that has the main variables collected and wrangled and 
-      now, the rest of the work with be making variables from those, and then exploring
-      what is going on in that dataset. 
-      In this instance, we can imagine that some parts of our particular exploring will
-      be helpful to others, and could be copied into the main explore_inator
-      or that we could make a branch?
 
 #To commit changes to a branch, you need to click on the pencil icon and make edits.
 Once the necessary edits have been made, click on "commit changes"
@@ -82,4 +81,17 @@ and the issue can be automatically closed once someone merges the pull request.
     To create a draft pull request, use the drop down menu and select "Create Draft Pull Request",
     then click "Draft Pull Request"
 Forking a repository, as talked about earlier, allows people to suggest changes to a repository they are
-not contributors of through pull requests. The owner of the project can then accept or deny these changes.
+not contributors of through pull requests. The owner of the project can then accept or deny these changes.#
+
+#Creating folders in GitHub:
+Folders make it easy to organize your files in a repository. There are two rules for making a folder in GitHub:
+you must have an existing repository and you can't create empty folders.
+If you want to create a new folder in a repository with existing content:
+    1. Go to the "Add file" drop down menu on the main page of the repository
+    2. Select the "Create new file" option
+    3. You should now see a blank input box where you would typically name a file. Type
+    in the desired name of your file followed by a forward slash.
+    4. Scroll down to the bottom of the page and click the commit new file button
+If you want to create a new folder in a repository that doesn't already have content in it,
+the steps will all be the same, except for the first step. Instead, you will click on the "creating
+a new file" hyper link. 
