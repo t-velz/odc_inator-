@@ -1,0 +1,67 @@
+Description -------------------------------------------------------------------------
+This file is instructions for using the command line to upload files to a GitHub
+repository.
+
+* Starting -----------------------------------------------------------------------
+#You must have an existing repository on GitHub
+#You also need to have the repository cloned locally on your computer
+#When a GitHub repository is created, it exists as a remote repository. Cloning it
+makes it so that you can sync between the two locations. It also makes it easier
+to add or remove files and push larger commits. You must have Git Bash installed.
+#Git Bash is a command line that allows you to use Git features. Git is a version 
+control system. You should have both Git and Git Bash installed. 
+    - To see if Git is installed on your system you can type this command into the 
+    command prompt:
+        "git --version"
+    The command prompt should display the installed version of Git.
+    - To see if Git Bash is installed you can search "Git Bash" on your computer
+    If Git is not installed, this is how to install it on Windows:
+    1. Go to the official Git website and click the "Download [version] for Windows
+    button
+    2. After the executable file has been downloaded, click on it to run the 
+    installer
+    3. Select the destination location 
+    4. Make sure the "Git Bash Here" checkbox is checked
+    5. You can change the name or leave it as Git at this step
+    6. Choose the default editor used by Git
+    7. Select "Git from the command line and also from 3rd- part software"
+    8. Select "Use the OpenSSL library" 
+    9. Proceed with the option "Checkout Windows-style, commit Unix-style line 
+    endings"
+    10. Proceed with "Use MinTTY (the default terminal of MSYS2)"
+    11. Choose "Default (fast-forward or merge)"
+    12. Choose "Git Credential Manager Core"
+Now confirm that Git installed successfully by typing "git --version" into the
+command line.   
+
+#You can now clone your repository 
+    Steps to clone your repository:
+    1. On GitHub, go to the main page of the repository
+    2. Click the green "< > Code" button 
+    3. Copy the repository URL
+        -You can clone 3 different ways:
+        1. Using HTTPS
+        2. Using an SSH key
+        3. Using GitHub CLI 
+    4. Open Git Bash 
+    5. Change your working directory to the location where you want the cloned
+    repository to be
+    6. Type "git clone" into the command line, and paste the URL
+        -it should look like this:
+        $ git clone https://github.com/"USERNAME"/"REPOSITORY NAME"
+    7. Press Enter to create the local clone of your repository 
+
+* Uploading files -----------------------------------------------------------------
+#Once you have both and existing repository and a clone, you can now upload a file
+to the repository on GitHub using the command line.
+    1. Move the file you want to upload to GitHub into the local directory that
+    was created when you made the clone.
+    2. Open Git Bash
+    3. Change the working directory to your local repository 
+    4. Add the file to your local repository and stage it for commit:
+        "$ git add ."
+    5. Commit the file 
+        "$ git commit -m your_file_name"
+    6. Push the changes in your local repository to GitHub
+        "$ git push origin your_branch"
+                
