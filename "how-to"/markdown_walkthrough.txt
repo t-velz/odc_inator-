@@ -1,6 +1,6 @@
 Description --------------------------------------------------------------------
 This file is a introduction to R Markdown, which includes an explanation 
-of getting Markdown set up, and a walkthrough file which walks you through
+of getting Markdown set up and a walkthrough file which walks you through
 the steps of creating a simple Markdown file. R Markdown combines plain text, 
 code, and code outputs in a single document. 
 
@@ -8,9 +8,9 @@ code, and code outputs in a single document.
 R markdown files are the source for reproducible documents, and are a powerful 
 tool for communicating the results of your research.s
 An R markdown file can be transformed in two ways:
-    1. knit: R Markdown will call a package that can be used to knit a file, called knitr.
-    knitr will run the chunks of R code and will add the results of the code to the
-    document next to the code chunk.
+    1. knit: R Markdown will call a package that can be used to knit a file, 
+    called knitr. knitr will run the chunks of R code and will add the results 
+    of the code to the document next to the code chunk.
 
     2. convert: A file can also be converted to a new format. For example,
     a .Rmd file can be converted to a HTML, PDF, or word document. R Markdown
@@ -87,6 +87,17 @@ Include alt text and the name of your image:
 
 You can also change the size of your image:
     ![alt text]#(your_image.png){width = 20%}
+   
+You can also insert a table using the "kable()" function in the knitr package
+ex.) 
+```{r}
+library(knitr)
+df <- data.frame(team=rep(c('A', 'B', 'C', 'D'), each=4),
+                 pos=rep(c('G', 'F'), times=8),
+                 points=round(runif(16, 4, 20),0))
+kable(df)
+```
+
 
 *Adding citations -----------------------------------------------------------------
     ^[footnotes]
