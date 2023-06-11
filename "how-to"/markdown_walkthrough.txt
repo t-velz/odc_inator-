@@ -1,0 +1,99 @@
+Description --------------------------------------------------------------------
+This file is a introduction to R Markdown, which includes an explanation 
+of getting Markdown set up, and a walkthrough file which walks you through
+the steps of creating a simple Markdown file. R Markdown combines plain text, 
+code, and code outputs in a single document. 
+
+*R Markdown information --------------------------------------------------------
+R markdown files are the source for reproducible documents, and are a powerful 
+tool for communicating the results of your research.s
+An R markdown file can be transformed in two ways:
+    1. knit: R Markdown will call a package that can be used to knit a file, called knitr.
+    knitr will run the chunks of R code and will add the results of the code to the
+    document next to the code chunk.
+
+    2. convert: A file can also be converted to a new format. For example,
+    a .Rmd file can be converted to a HTML, PDF, or word document. R Markdown
+    will keep the text, code results, and formatting of the original file.
+
+Usually, these two processes are done at the same time using render. 
+
+*Getting Markdown installed ----------------------------------------------------
+
+First, use the command:
+    "install.packages("rmarkdown")
+on the command line to install R Markdown
+
+#The default output for your file will be HTML, and with this format, you can
+easily view it in a web browser. 
+
+*Creating a Markdown document, the walkthrough ----------------------------------
+
+Now that Markdown is installed, open R Studio and open a new R Markdown file by
+going to File > New File > R Markdown
+
+The document will open with its default writing. Clear everything but the
+"```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```"
+*Headings ----------------------------------------------------------------------
+
+Make a heading using this symbol `#`:
+    # This is a main heading 
+
+To make a subheading, use two:
+    ## This is a subheading 
+
+To make further subheadings, use more `#`
+
+Type a heading and subheading using `#`
+
+*Text --------------------------------------------------------------------------
+
+Make italicized text by surrounding desired test with `*`:
+    *italics*
+
+Make bold text by surrounding the text with two `*`:
+    **bold text**
+
+You can include a link like this:
+    [link](https://www.name_of_your_link.com/)
+
+Type italicized and bold text using the syntax above, and try including a link
+into your Markdown document
+
+*Including code -----------------------------------------------------------------
+You can include a chunk of code that will be evaluated one you knit the 
+document by creating a code chunk like this:
+
+```{r}
+your code here 
+```
+
+Include a simple chunk of code that can be evaluated, such as 
+    "values <- rnorm(10)
+    values"
+
+If you don't want the code to be evaluated, write the chunk of code the same,
+except put eval = FALSE in the curly braces.
+    {r, eval = FALSE}
+
+Your code chunk can also be named by including the name in the curly braces:
+    {r named chunk, eval = FALSE}
+
+*Inserting images -----------------------------------------------------------------
+Include alt text and the name of your image:
+    ![alt text]#(your_image.png)
+
+You can also change the size of your image:
+    ![alt text]#(your_image.png){width = 20%}
+
+*Adding citations -----------------------------------------------------------------
+    ^[footnotes]
+
+*Now, to produce your document, press the "knit" button ---------------------------
+
+
+
+
+
