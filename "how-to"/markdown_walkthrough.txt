@@ -104,6 +104,8 @@ kable(df)
 
 *Now, to produce your document, press the "knit" button ---------------------------
 
+*My example Markdown file I made using this file! ---------------------------------
+file:///C:/Users/milag/OneDrive/Documents/Markdown.html
 
 
 
