@@ -150,7 +150,12 @@ read_sheet(
 #'  -----------------------------------------------------------------------
 
 
-
+#   Hey Miracle-- 
+#    the function would encapsulate the following section:     #2 main loop
+#  users would still need to specify the pass # prior to starting a run
+#  and, if the loop run broke at some point, users would need to specify the pass #
+#  to be equal to the pass that failed, where the pass # references a row in the
+#  url file that we made it to.  
 
 
 #'  -----------------------------------------------------------------------
