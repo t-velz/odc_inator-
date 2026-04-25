@@ -70,10 +70,14 @@ tk %>%
          )  -> tk
 
 hist(tk$ft_attention)
-table(tk$ft_attention)   # 228  10
+table(tk$ft_attention)   
+
+# 228  10
 
 hist(tk$at_attention)
-table(tk$at_attention)   # 238  0
+table(tk$at_attention)   
+
+# 238  0
 
 
 # *********************************************
@@ -603,6 +607,175 @@ table(tk$ft_utility)
 table(tk$at_utility)
 
 
+#   can start here and skip the var creation
+
+read_sheet(
+  "https://docs.google.com/spreadsheets/d/1JQFCPc0TI7tuQIe0I1tWFk4LVr-aHkjbehP7BFprj3g/edit?usp=sharing",
+  col_names = TRUE) %>%
+  tibble() -> tk2
+
+
+
+# *********************************************
+##  2.2 Check Index Validity   ####
+# *********************************************
+
+## list new vars
+
+names(tk2)    # to get list of new vars from end of list, 
+
+#   open up google sheet as reference
+
+# "term by reference"
+# https://docs.google.com/spreadsheets/d/1Pc7dG-nN1uwdqpzLbhb1wf7o2LAGdTJ-pW7pC-jnB1M/edit#gid=0
+
+tk2 %>%
+  mutate(case2 = case)  -> tk2
+
+tk2 %>%
+  select(case, sh_fake_reason, case2,
+         sh_authentic_reason,
+         ft_attention,
+         at_attention,
+         ft_dishonest,
+         at_dishonest,
+         ft_show_off,
+         at_show_off,
+         ft_profit,
+         at_profit,
+         ft_staged,
+         at_staged,
+         ft_accurate,
+         at_accurate,
+         ft_credible,
+         at_credible,
+         ft_educate,
+         at_educate,
+         ft_health,
+         at_health,
+         ft_humor,
+         at_humor,
+         ft_inherent,
+         at_inherent,
+         ft_lived.experience,
+         at_lived.experience,
+         ft_original,
+         at_original,
+         ft_personal,
+         at_personal,
+         ft_pure,
+         at_pure,
+         ft_raw,
+         at_raw,
+         ft_reflect,
+         at_reflect,
+         ft_relatable,
+         at_relatable,
+         ft_transparent,
+         at_transparent,
+         ft_utility,
+         at_utility) -> tk_short
+
+
+tk_sh <- gs4_create("tk_short",
+                    sheets = tk_short)
+tk_short %>%
+  filter(ft_dishonest > 0) -> tk_fake_cuz_dishonest
+
+tk_short %>%
+  filter(at_dishonest > 0) -> auth_cuz_dishonest  
+
+## authenticity themes
+
+tk_short %>%
+  filter(ft_accurate > 0) -> tk_fake_cuz_accurate
+
+tk_short %>%
+  filter(at_accurate > 0) -> tk_auth_cuz_accurate 
+
+tk_short %>%
+  filter(ft_credible > 0) -> tk_fake_cuz_credible
+
+tk_short %>%
+  filter(at_credible > 0) -> tk_auth_cuz_credible
+
+tk_short %>%
+  filter(ft_educate > 0) -> tk_fake_cuz_educate
+
+tk_short %>%
+  filter(at_educate > 0) -> tk_auth_cuz_educate
+
+tk_short %>%
+  filter(ft_health > 0) -> tk_fake_cuz_health
+
+tk_short %>%
+  filter(at_health > 0) -> tk_auth_cuz_health
+
+tk_short %>%
+  filter(ft_humor > 0) -> tk_fake_cuz_humor
+
+tk_short %>%
+  filter(at_humor > 0) -> tk_auth_cuz_humor
+
+tk_short %>%
+  filter(ft_inherent > 0) -> tk_fake_cuz_inherent
+
+tk_short %>%
+  filter(at_inherent > 0) -> tk_auth_cuz_inherent
+
+tk_short %>%
+  filter(ft_lived.experience > 0) -> tk_fake_cuz_lived.experience
+
+tk_short %>%
+  filter(at_lived.experience > 0) -> tk_auth_cuz_lived.experience
+
+tk_short %>%
+  filter(ft_original > 0) -> tk_fake_cuz_original
+
+tk_short %>%
+  filter(at_original > 0) -> tk_auth_cuz_original
+
+tk_short %>%
+  filter(ft_personal > 0) -> tk_fake_cuz_personal
+
+tk_short %>%
+  filter(at_personal > 0) -> tk_auth_cuz_personal
+
+tk_short %>%
+  filter(ft_pure > 0) -> tk_fake_cuz_pure
+
+tk_short %>%
+  filter(at_pure > 0) -> tk_auth_cuz_pure
+
+tk_short %>%
+  filter(ft_raw > 0) -> tk_fake_cuz_raw
+
+tk_short %>%
+  filter(at_raw > 0) -> tk_auth_cuz_raw
+
+tk_short %>%
+  filter(ft_reflect > 0) -> tk_fake_cuz_reflect
+
+tk_short %>%
+  filter(at_reflect > 0) -> tk_auth_cuz_reflect
+
+tk_short %>%
+  filter(ft_relatable > 0) -> tk_fake_cuz_relatable
+
+tk_short %>%
+  filter(at_relatable > 0) -> tk_auth_cuz_relatable
+
+tk_short %>%
+  filter(ft_transparent > 0) -> tk_fake_cuz_transparent
+
+tk_short %>%
+  filter(at_transparent > 0) -> tk_auth_cuz_transparent
+
+tk_short %>%
+  filter(ft_utility > 0) -> tk_fake_cuz_utility
+
+tk_short %>%
+  filter(at_utility > 0) -> tk_auth_cuz_utility
 
 # *********************************************
 # 3 Recodes                                ####
